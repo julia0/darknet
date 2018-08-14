@@ -1,0 +1,22 @@
+# modeled after yolov3.yaml from ETH Zurich legged robotics group YOLO ROS package
+
+yolo_model:
+
+  config_file:
+    name: yolo-bdd.cfg
+  weight_file:
+    name: yolo-bdd_XXXX.weights # MUST CHANGE ACCORDING TO WEIGHTS FILE
+  threshold:
+    value: 0.3
+  detection_classes:
+    names:
+      - bike
+      - bus
+      - car
+      - motor
+      - person
+      - rider
+      - traffic light
+      - traffic sign
+      - train
+      - truck
